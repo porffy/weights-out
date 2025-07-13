@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: weights-checker
+    name: weights-out
     env: python
     buildCommand: ""
     startCommand: python main.py
