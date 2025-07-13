@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: weights-checker
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: PUSHOVER_TOKEN
+        value: ap2yae9on7csd1t386vhb3ehbtp5e5
+      - key: PUSHOVER_USER
+        value: utjtwa8eye7p7dype8kvu5i7ro2ukk
