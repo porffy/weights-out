@@ -53,7 +53,7 @@ def check_weights():
     try:
         timestamp = int(time.time() * 1000)
         full_url = URL + str(timestamp)
-        response = session.get(full_url, timeout=15)
+        response = session.get(full_url, timeout=15, verify:False)
 
         print("🔎 Full response text:")
         print(response.text[:300])  # Just the first 300 characters for preview
